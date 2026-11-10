@@ -41,13 +41,13 @@ export const ME = {
   projects: [
     { title: "Currency Detection App", stack: "CNN, YOLO, Android Studio", image: currency, imageLabel: "Concept preview",
       desc: "An app that identifies Indian currency notes in real time using CNN and YOLO, built so visually impaired users can recognise denominations independently.",
-      live: "", repo: "https://github.com/Hari-fr" },
+      live: "", repo: "https://github.com/Hari-fr/currency-detection-app" },
     { title: "Multi-Model RAG Document Scanner", stack: "RAG, OCR, LLMs", image: rag, imageLabel: "Concept preview",
       desc: "A document scanner that combines retrieval-augmented generation and OCR for precise outputs, with fine-tuned LLMs for readability, accuracy and summarisation.",
       live: "", repo: "https://github.com/Hari-fr" },
     { title: "AI-Powered PDF Query System", stack: "Phi-3-mini, MiniLM, PdfPlumber, Python", image: pdfquery, imageLabel: "Concept preview",
       desc: "A smart PDF interface for natural-language questions, using semantic search and sentence transformers to pull context-aware insights out of documents.",
-      live: "", repo: "https://github.com/Hari-fr" },
+      live: "", repo: "https://github.com/Hari-fr/ai-pdf-assistant" },
   ],
 
   // Not shown on the site yet (no section for them) — ready for an Experience / Education section
