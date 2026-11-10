@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+html.has-cursor, html.has-cursor * { cursor: none !important; }
+body { background: #050505; color: #f4f4f5; margin: 0; overflow-x: hidden; font-family: Inter, system-ui, sans-serif; }
+
+@layer components {
+  .grad { background: linear-gradient(180deg, #fff 20%, #71717a 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .serif { font-family: "Instrument Serif", Georgia, serif; font-style: italic; font-weight: 400; }
+  .glass { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); backdrop-filter: blur(14px); border-radius: 20px; }
+  .btn { display: inline-flex; gap: .4rem; align-items: center; padding: .85rem 1.6rem; border-radius: 999px; font-size: 1rem; font-weight: 500; }
+  .btn-l { background: #d9d3c3; color: #111; }
+  .btn-d { border: 1px solid rgba(255,255,255,.2); }
+  .marq { display: flex; gap: 1rem; padding-right: 1rem; width: max-content; }
+  .chip { padding: .75rem 1.6rem; border-radius: 999px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); font-size: 1.1rem; color: #d4d4d8; white-space: nowrap; transition: background .25s, color .25s, border-color .25s; }
+  .chip::before { content: "•"; margin-right: .7rem; opacity: .45; }
+  .chip:hover { background: #d9d3c3; color: #111; border-color: transparent; }
+}
